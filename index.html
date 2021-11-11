@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="/Css/style.css">
+
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Quero saber qual o seu paladar para vinhos</h1>
+        <p id="subtitulo">Complete com suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo"> <!--agrupador de campos-->
+
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="idade">Idade</label>
+               
+                <select id="idade">
+                    <option selected disabled value="">Selecione</option>
+                    <option value="">entre 18 e 25 anos</option>
+                    <option value="">entre 25 e 35 anos</option>
+                    <option value="">entre 35 e 45 anos</option>
+                    <option value="">entre 45 a 55 anos</option>
+                    <option value="">Acima de 55</option>
+                </select>
+            </div>
+        </fieldset>
+
+
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"required>
+        </div>
+
+        <div class="campo">
+            <label for="">Qual seu tipo preferido de vinho:</label>
+            <br>
+            <label for="">
+                <input type="radio" name="radioTipoVinho" value="suave" checked>Suave
+            </label>
+
+            <label for="">
+                <input type="radio" name="radioTipoVinho" value="seco">Seco
+            </label>
+
+            <label for="">
+                <input type="radio" name="radioTipoVinho" value="demi-seco">Demi-Seco
+            </label>
+        </div>
+
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label>Qual seu tipo preferido de uva vinífera:</label><br><br>
+                <input type="checkbox" id="Tannat" name="Tannat" valeu= "Tannat">
+                <label for="Tannat">Tannat</label>
+                <input type="checkbox" id="Merlot" name="Merlot" valeu= "Merlot">
+                <label for="Merlot">Merlot</label>
+                <input type="checkbox" id="Malbec" name="Malbec" valeu= "Malbec">
+                <label for="Malbec">Malbec</label>
+                <input type="checkbox" id="Pinot Noir" name="Pinot Noir" valeu= "Pinot Noir">
+                <label for="Pinot Noir">Pinot Noir</label>
+                <input type="checkbox" id="Chardonnay" name="Chardonnay" valeu= "Chardonnay">
+                <label for="Chardonnay">Chardonnay</label>
+                <input type="checkbox" id="Cabernet" name="Cabernet" valeu= "Cabernet">
+                <label for="Cabernet">Cabernet Sauvignon</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+           <label><strong>Conte um pouco da sua experiência com vinhos</strong></label>
+        <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em;"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluido</button>
+
+    </form>
+
+
+
+</body>
+</html>
